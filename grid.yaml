@@ -10,7 +10,7 @@ services:
     depends_on:
       - hub
     deploy:
-      replicas: 1
+      replicas: 0
     env_file: .env
   firefox:
     image: seleniarm/node-firefox:4.20
@@ -18,5 +18,5 @@ services:
     depends_on:
       - hub
     deploy:
-      replicas: 1
+      replicas: 0
     env_file: .env
